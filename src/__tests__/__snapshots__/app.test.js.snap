@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse json to latex should parse 1`] = `
+"\\\\nkmacroproperty{\\\\#}\\\\nkdirectivekeyword{include}\\\\ \\\\nkstring{<stdio.h>}
+\\\\nkmacroproperty{\\\\#}\\\\nkdirectivekeyword{include}\\\\ \\\\nkstring{<string.h>}
+
+\\\\nkkeyword{int}\\\\ \\\\nkfunction{main}\\\\nkpunctuation{(}\\\\nkkeyword{void}\\\\nkpunctuation{)}\\\\ \\\\nkpunctuation{\\\\{}
+\\\\ \\\\ \\\\ \\\\ \\\\nkkeyword{int}\\\\ space\\\\nkpunctuation{;}
+\\\\ \\\\ \\\\ \\\\ \\\\nkkeyword{char}\\\\ \\\\nkoperator{*}str\\\\nkpunctuation{;}
+
+\\\\ \\\\ \\\\ \\\\ space\\\\ \\\\nkoperator{=}\\\\ \\\\nknumber{40}\\\\nkpunctuation{;}
+\\\\ \\\\ \\\\ \\\\ str\\\\ \\\\nkoperator{=}\\\\ \\\\nkstring{\\\\textquotedbl{}hello,\\\\ world!\\\\textquotedbl{}}\\\\nkpunctuation{;}
+
+\\\\ \\\\ \\\\ \\\\ \\\\nkfunction{printf}\\\\nkpunctuation{(}\\\\nkstring{\\\\textquotedbl{}\\\\%*s\\\\textbackslash{}n\\\\textquotedbl{}}\\\\nkpunctuation{,}\\\\ \\\\nkpunctuation{(}\\\\nkkeyword{int}\\\\nkpunctuation{)}\\\\ \\\\nkpunctuation{(}space\\\\ \\\\nkoperator{/}\\\\ \\\\nknumber{2}\\\\ \\\\nkoperator{+}\\\\ \\\\nkfunction{strlen}\\\\nkpunctuation{(}str\\\\nkpunctuation{)}\\\\ \\\\nkoperator{/}\\\\ \\\\nknumber{2}\\\\nkpunctuation{)}\\\\nkpunctuation{,}\\\\ str\\\\nkpunctuation{)}\\\\nkpunctuation{;}
+
+\\\\ \\\\ \\\\ \\\\ \\\\nkkeyword{return}\\\\ \\\\nknumber{0}\\\\nkpunctuation{;}
+\\\\nkpunctuation{\\\\}}"
+`;

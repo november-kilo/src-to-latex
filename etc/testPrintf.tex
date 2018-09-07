@@ -1,0 +1,44 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyvrb, framed, textcomp, xcolor}
+
+\definecolor{nkmacropropertycol}{RGB}{153, 0, 85}
+\definecolor{nkdirectivekeywordcol}{RGB}{0, 119, 170}
+\definecolor{nkstringcol}{RGB}{102, 153, 0}
+\definecolor{nkkeywordcol}{RGB}{0, 119, 170}
+\definecolor{nkfunctioncol}{RGB}{221, 74, 104}
+\definecolor{nkpunctuationcol}{RGB}{153, 153, 153}
+\definecolor{nkoperatorcol}{RGB}{0, 0, 0}
+\definecolor{nknumbercol}{RGB}{153, 0, 85}
+\definecolor{shadecolor}{RGB}{245, 242, 240}
+
+\newcommand{\nkmacroproperty}[1]{{\color{nkmacropropertycol}#1}}
+\newcommand{\nkdirectivekeyword}[1]{{\color{nkdirectivekeywordcol}#1}}
+\newcommand{\nkstring}[1]{{\color{nkstringcol}#1}}
+\newcommand{\nkkeyword}[1]{{\color{nkkeywordcol}#1}}
+\newcommand{\nkfunction}[1]{{\color{nkfunctioncol}#1}}
+\newcommand{\nkpunctuation}[1]{{\color{nkpunctuationcol}#1}}
+\newcommand{\nkoperator}[1]{{\color{nkoperatorcol}#1}}
+\newcommand{\nknumber}[1]{{\color{nknumbercol}#1}}
+
+\begin{document}
+    \shaded
+\begin{Verbatim}[commandchars=\\\{\}]
+\nkmacroproperty{\#}\nkdirectivekeyword{include}\ \nkstring{<stdio.h>}
+\nkmacroproperty{\#}\nkdirectivekeyword{include}\ \nkstring{<string.h>}
+
+\nkkeyword{int}\ \nkfunction{main}\nkpunctuation{(}\nkkeyword{void}\nkpunctuation{)}\ \nkpunctuation{\{}
+\ \ \ \ \nkkeyword{int}\ space\nkpunctuation{;}
+\ \ \ \ \nkkeyword{char}\ \nkoperator{*}str\nkpunctuation{;}
+
+\ \ \ \ space\ \nkoperator{=}\ \nknumber{40}\nkpunctuation{;}
+\ \ \ \ str\ \nkoperator{=}\ \nkstring{\textquotedbl{}hello,\ world!\textquotedbl{}}\nkpunctuation{;}
+
+\ \ \ \ \nkfunction{printf}\nkpunctuation{(}\nkstring{\textquotedbl{}\%*s\textbackslash{}n\textquotedbl{}}\nkpunctuation{,}\ \nkpunctuation{(}\nkkeyword{int}\nkpunctuation{)}\ \nkpunctuation{(}space\ \nkoperator{/}\ \nknumber{2}\ \nkoperator{+}\ \nkfunction{strlen}\nkpunctuation{(}str\nkpunctuation{)}\ \nkoperator{/}\ \nknumber{2}\nkpunctuation{)}\nkpunctuation{,}\ str\nkpunctuation{)}\nkpunctuation{;}
+
+\ \ \ \ \nkkeyword{return}\ \nknumber{0}\nkpunctuation{;}
+\nkpunctuation{\}}
+\end{Verbatim}
+    \endshaded
+\end{document}
