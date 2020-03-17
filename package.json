@@ -4,19 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "mem": "^5.1.1",
-    "refractor": "^2.6.0"
+    "mem": "^6.0.1",
+    "refractor": "^2.10.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-jest": "^23.4.2",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^5.5.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "eslint": "^6.8.0",
     "eslint-config-strongloop": "^2.1.0",
-    "jest": "^23.5.0",
-    "regenerator-runtime": "^0.12.1"
+    "eslint-plugin-jest": "^23.8.2",
+    "jest": "^25.1.0",
+    "jest-config": "^25.1.0",
+    "regenerator-runtime": "^0.13.5"
   },
   "jest": {
     "testEnvironment": "node"

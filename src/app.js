@@ -58,9 +58,6 @@ export const parseJsonToLatex = () => {
       console.error('Error', err);
       return err;
     }
-    console.log('data', data);
-    const json = refractor.highlight(data, 'c');
-    console.log('json', json);
-    return parseJsonToLatexCallback(json);
+    console.log(parseJsonToLatexCallback(refractor.highlight(data, 'c')));
   });
 };

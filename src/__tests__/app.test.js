@@ -1,6 +1,5 @@
 import refractor from 'refractor/core';
-import c from 'refractor/lang/c';
-import {parseJsonToLatexCallback} from "../app";
+import {parseJsonToLatexCallback} from '../app';
 
 describe('parse json to latex', () => {
   let json;
